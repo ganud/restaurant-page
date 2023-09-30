@@ -9,10 +9,14 @@ module.exports = {
     devtool: 'inline-source-map',
     devServer: {
         static: './dist',
+        hot: false, // optional, but you must not set both hot and liveReload to true
+        liveReload: true
       },
    plugins: [
      new HtmlWebpackPlugin({
-        title: 'Development',
+        title: 'Restaurant Page',
+        scriptLoading: 'defer',
+        template: "src/index.html"
      }),
    ],
     output: {
@@ -23,4 +27,12 @@ module.exports = {
     optimization: {
         runtimeChunk: 'single',
       },
+    module: {
+      rules: [
+        {
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader'],
+        },
+      ],
+    },
   };

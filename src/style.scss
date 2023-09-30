@@ -1,0 +1,98 @@
+body {
+    background-color: gray;
+    display: grid;
+    grid-template-rows: auto 5%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style-type: none;
+    
+  }
+
+#content {
+    margin-top: 80px;
+    height: 150vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-image: url("https://external-preview.redd.it/so-i-remade-the-pizza-tower-intro-iupdated-and-icon-at-end-v0-zYMWEQNTiG1p8SeTabO96dojkoPEhPhS0nzR5-I5F2k.png?width=640&crop=smart&format=pjpg&auto=webp&s=d059f0e7855fa273e1ebb93eec3def49e585488b");
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card {
+    font-size: 100px;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+    width: 40%;
+    background-color: rgb(251, 224, 149);
+    p.subtext-header {
+        font-size: 40px;
+    }
+    p.subtext {
+        font-size: 20px;
+    }
+    .subcard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(223, 223, 112);
+        border:rgb(156, 83, 83) solid 10px;
+        border-radius: 10%;
+        gap: 10px;
+
+        img {
+            max-width: 200px;
+            border-radius: 50px;
+        }
+    }
+    
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #d9cece;
+    z-index: 999;
+    height: 90px;
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+    padding-top: 10px;
+}
+
+.nav-elements {
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+    li {
+        padding: 30px;
+        background-color: white;
+        border: 1px solid rgb(255, 1, 1);
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer {
+    background-color:rgb(92, 92, 92);
+}
