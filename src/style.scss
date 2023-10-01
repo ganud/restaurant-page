@@ -2,6 +2,11 @@ body {
     background-color: gray;
     display: grid;
     grid-template-rows: auto 5%;
+    background-image: url("https://external-preview.redd.it/so-i-remade-the-pizza-tower-intro-iupdated-and-icon-at-end-v0-zYMWEQNTiG1p8SeTabO96dojkoPEhPhS0nzR5-I5F2k.png?width=640&crop=smart&format=pjpg&auto=webp&s=d059f0e7855fa273e1ebb93eec3def49e585488b");
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 * {
@@ -15,21 +20,17 @@ ul {
 
 #content {
     margin-top: 80px;
-    height: 150vh;
-    background-color: antiquewhite;
+    height: 100vh;
     display: flex;
     justify-content: center;
     padding: 50px;
-    background-image: url("https://external-preview.redd.it/so-i-remade-the-pizza-tower-intro-iupdated-and-icon-at-end-v0-zYMWEQNTiG1p8SeTabO96dojkoPEhPhS0nzR5-I5F2k.png?width=640&crop=smart&format=pjpg&auto=webp&s=d059f0e7855fa273e1ebb93eec3def49e585488b");
-    background-color: #cccccc; /* Used if the image is unavailable */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+
 }
 
 .card {
     font-size: 100px;
     padding: 10px 10%;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -39,11 +40,13 @@ ul {
     background-color: rgb(251, 224, 149);
     p.subtext-header {
         font-size: 40px;
+        font-weight: bold;
     }
     p.subtext {
         font-size: 20px;
     }
     .subcard {
+        min-width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -58,14 +61,28 @@ ul {
             border-radius: 50px;
         }
     }
-    
+
+    .title-card {
+        min-width: 120%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(215, 215, 52);
+        border:rgb(156, 83, 83) solid 10px;
+        border-radius: 10%;
+        gap: 10px;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
 }
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: #d9cece;
+    background: rgba($color: #383838, $alpha: 0.9);
     z-index: 999;
     height: 90px;
     overflow: hidden;
@@ -94,5 +111,10 @@ header {
 }
 
 footer {
-    background-color:rgb(92, 92, 92);
+    background-color:rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
 }
